@@ -25,13 +25,6 @@ matrix:
     - env: IMAGE=maven:3-jdk-9-slim
     - env: IMAGE=maven:3-jdk-8
     - env: IMAGE=maven:3-ibmjava-8
-branches:
-  only:
-    - master
-    - new-master
-    - javadoc
-    - /^branch-.*$/
-    - /^[0-9]+-.*$/
 env:
   global:
   - DOCKERRUN="docker run -it --rm -v $PWD:/src -v $HOME/.m2:/root/.m2 -w /src"
@@ -46,6 +39,8 @@ script:
   # Print surefire output to the console instead of files
   - unset _JAVA_OPTIONS
   - $DOCKERRUN $IMAGE mvn -Dsurefire.useFile=false verify
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
 git:
   depth: 10000
 sudo: required
