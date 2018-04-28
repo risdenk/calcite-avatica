@@ -59,6 +59,8 @@ limitations under the License.
     <bouncycastle.version>1.55</bouncycastle.version>
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <checksum-maven-plugin.version>1.2</checksum-maven-plugin.version>
+    <!-- Needed for maven-javadoc-plugin see MJAVADOC-524 -->
+    <commons-lang3.version>3.7</commons-lang3.version>
     <dropwizard-metrics3.version>3.1.2</dropwizard-metrics3.version>
     <forbiddenapis.version>2.3</forbiddenapis.version>
     <!-- We support guava versions as old as 14.0.1 (the version used by Hive)
@@ -554,6 +556,13 @@ limitations under the License.
         <plugin>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>${maven-javadoc-plugin.version}</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.commons</groupId>
+              <artifactId>commons-lang3</artifactId>
+              <version>${commons-lang3.version}</version>
+            </dependency>
+          </dependencies>
         </plugin>
         <plugin>
           <artifactId>maven-shade-plugin</artifactId>
@@ -741,6 +750,34 @@ limitations under the License.
           </plugin>
         </plugins>
       </build>
+    </profile>
+    <profile>
+      <id>java11</id>
+      <activation>
+        <jdk>11</jdk>
+      </activation>
+      <properties>
+        <!-- JDK 11 needs 3.8 for LANG-1384 -->
+        <commons-lang3.version>3.8-SNAPSHOT</commons-lang3.version>
+      </properties>
+      <repositories>
+        <repository>
+          <id>apache-snapshots</id>
+          <url>https://repository.apache.org/content/groups/snapshots</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>apache-plugin-snapshots</id>
+          <url>https://repository.apache.org/content/groups/snapshots</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </pluginRepository>
+      </pluginRepositories>
     </profile>
   </profiles>
 </project>
