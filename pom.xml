@@ -61,7 +61,7 @@ limitations under the License.
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <checksum-maven-plugin.version>1.2</checksum-maven-plugin.version>
     <!-- Needed for JDK 10 javadoc for [LANG-1365] -->
-    <commons-lang3.version>3.7</commons-lang3.version>
+    <commons-lang3.version>3.8</commons-lang3.version>
     <dropwizard-metrics3.version>3.1.2</dropwizard-metrics3.version>
     <forbiddenapis.version>2.3</forbiddenapis.version>
     <!-- We support guava versions as old as 14.0.1 (the version used by Hive)
