@@ -93,7 +93,7 @@ limitations under the License.
     <!-- Apache 19 has 2.20.1, but need 2.21.0+ for [MPOM-184] -->
     <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
     <mockito.version>2.5.5</mockito.version>
-    <owasp-dependency-check.version>3.3.1</owasp-dependency-check.version>
+    <owasp-dependency-check.version>3.3.2</owasp-dependency-check.version>
     <protobuf.version>3.5.1</protobuf.version>
     <scott-data-hsqldb.version>0.1</scott-data-hsqldb.version>
     <servlet.version>3.0.1</servlet.version>
