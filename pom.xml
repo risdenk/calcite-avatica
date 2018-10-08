@@ -95,7 +95,7 @@ limitations under the License.
     <maven-scm-provider.version>1.11.1</maven-scm-provider.version>
     <!-- ASF 21 provides 3.1.1 but need 3.2.0 due to MSHADE-289 -->
     <maven-shade-plugin.version>3.2.0</maven-shade-plugin.version>
-    <mockito.version>2.22.0</mockito.version>
+    <mockito.version>2.23.0</mockito.version>
     <os-maven-plugin.version>1.6.0</os-maven-plugin.version>
     <owasp-dependency-check.version>3.3.2</owasp-dependency-check.version>
     <protobuf.version>3.6.1</protobuf.version>
