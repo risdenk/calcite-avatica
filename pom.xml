@@ -66,7 +66,7 @@ limitations under the License.
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <!-- Needed for JDK 10 javadoc for [LANG-1365] -->
     <commons-lang3.version>3.8</commons-lang3.version>
-    <docker-maven-plugin.version>1.1.1</docker-maven-plugin.version>
+    <docker-maven-plugin.version>1.2.0</docker-maven-plugin.version>
     <dropwizard-metrics.version>4.0.3</dropwizard-metrics.version>
     <forbiddenapis.version>2.6</forbiddenapis.version>
     <groovy-maven-plugin.version>2.1</groovy-maven-plugin.version>
