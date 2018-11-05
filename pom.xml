@@ -104,7 +104,7 @@ limitations under the License.
     <servlet.version>4.0.1</servlet.version>
     <slf4j.version>1.7.25</slf4j.version>
     <spotbugs.version>3.1.7</spotbugs.version>
-    <spotbugs-maven-plugin.version>3.1.6</spotbugs-maven-plugin.version>
+    <spotbugs-maven-plugin.version>3.1.8</spotbugs-maven-plugin.version>
   </properties>
   <issueManagement>
     <system>Jira</system>
