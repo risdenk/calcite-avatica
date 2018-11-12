@@ -363,7 +363,7 @@ limitations under the License.
       <plugin>
         <groupId>org.apache.rat</groupId>
         <artifactId>apache-rat-plugin</artifactId>
-        <version>0.12</version>
+        <version>0.13</version>
         <configuration>
           <excludes>
             <!-- Do not exclude site/target; it should not exist
