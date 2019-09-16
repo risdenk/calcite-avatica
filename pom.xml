@@ -64,7 +64,7 @@ limitations under the License.
     <!-- This list is in alphabetical order. -->
     <apache-rat-plugin.version>0.13</apache-rat-plugin.version>
     <asm.version>7.1</asm.version>
-    <bouncycastle.version>1.60</bouncycastle.version>
+    <bouncycastle.version>1.63</bouncycastle.version>
     <build-helper-maven-plugin.version>3.0.0</build-helper-maven-plugin.version>
     <!-- Needed for JDK 10 javadoc for [LANG-1365] -->
     <commons-lang3.version>3.8.1</commons-lang3.version>
